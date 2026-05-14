@@ -1,7 +1,7 @@
 def copy_file(command: str) -> None:
     try:
         com, original_file, copy_file = command.split()
-    except ValueError as e:
+    except ValueError:
         return
 
     if com == "cp" and original_file != copy_file:
